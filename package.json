@@ -1,0 +1,11 @@
+{
+  "name": "natalialassance.com",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-combine-media-queries": "~1.0.9",
+    "grunt-svgmin": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
