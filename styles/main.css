@@ -1,0 +1,366 @@
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1.4;
+	background-color: #fff;
+	font-family: "OpenSans", sans-serif;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+	font-family: inherit;
+	-ms-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+/*----------
+GENERAL
+-----------*/
+
+.title {
+	position: relative;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #ff6600;
+	display: block;
+	text-align: center;
+	margin: .5em 0;
+	line-height: 1;
+	z-index: 2;
+}
+
+.title::before {
+	line-height: 1;
+	content: attr(data-subtitle);
+	color: rgba(0,0,0,.05);
+	font-weight: bold;
+	position: absolute;
+	top: -1.75rem;
+	left: 1rem;
+	font-size: 6rem;
+	z-index: -1;
+}
+
+.highlightBox {
+	background-color: #f60;
+	padding: 1em .5em;
+}
+
+.highlightBox span {
+	font-weight: bold;
+	color: #fff;
+	font-size: 1rem;
+}
+
+/*----------
+HEADER
+-----------*/
+
+.top {
+	width: 100%;
+	padding-bottom: 2em;
+}
+
+.menuBtn {
+	float: left;
+	line-height: 1;
+	margin: 1rem;
+	font-size: 4rem;
+	font-weight: bold;
+	padding: 0 .2em;
+	display: block;
+	color: #fff;
+	background-color: #ff6600;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.photo {
+	margin-bottom: 2em;
+}
+
+.natiPhoto {
+	height: 385px;
+	background: url('../images/home/top.png') no-repeat;
+	background-size: contain;
+}
+
+.intro__txt {
+	color: #336;
+	margin-top: 1em;
+	padding: 0 2em;
+	line-height: 1.7;
+	display: block;
+}
+
+strong.intro__txt {
+	color: #f60;
+}
+
+strong.intro__txt:first-of-type {
+	margin-top: 3em;
+}
+
+/*----------
+WORKS
+-----------*/
+
+.what {
+	overflow: hidden;
+	margin-bottom: 3em;
+}
+
+.what > .title {
+	font-size: 1.5rem;
+	margin-bottom: 2em;
+}
+
+.title > em {
+	font-weight: normal;
+}
+
+.what__pic {
+	float: left;
+	width: 45%;
+}
+
+.what__pic > img {
+	width: 100%;
+}
+
+.what__txt {
+	float: right;
+	width: 55%;
+}
+
+.what__skills {
+	padding: .5em .25em;
+	color: #336;
+	font-size: .75rem;
+}
+
+.what__skills ul {
+	float: right;
+	list-style: disc;
+	width: 90%;
+}
+
+.what__skills li {
+	list-style-position: inside;
+}
+
+/*-------
+PROCESS
+-------*/
+
+.process {
+	overflow: hidden;
+}
+
+.process .highlightBox {
+	float: right;
+	margin: 1em 0;
+	width: 80%;
+}
+
+.process li {
+	margin-bottom: 2em;
+}
+
+.icon {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.process__title {
+	margin: 1em 0 .5em;
+	color: #f60;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.process__txt {
+	padding: 0 2em .5em;
+	font-size: 1rem;
+	color: #336;
+	text-align: center;
+}
+
+/*-------
+FOOTER
+-------*/
+
+.bottom {
+	padding-top: 3em;
+	background-color: #eaeaea;
+}
+
+.bottom > .title {
+	color: #336;
+	font-size: 1.2rem;
+}
+
+.bottom .title::before {
+	top: -.5em;
+}
+
+.mailLink {
+	display: block;
+	padding: .5em 0;
+	font-size: 1.2rem;
+	color: #f60;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+.bottomPic {
+	height: 300px;
+	width: 100%;
+	background: url('../images/bottom.png') no-repeat bottom right;
+	background-size: contain;
+}
+

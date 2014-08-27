@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         },
         your_target: {
           files: {
-            'assets/styles/css': ['assets/styles/css/*.css']
+            'styles': ['styles/*.css']
           }
         }
       },
@@ -23,9 +23,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'img/src',
+          cwd: 'images/',
            src: ['**/*.svg'],
-           dest: 'img/',
+           dest: 'images/',
            ext: '.min.svg'
          }]
        }
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
           banner: '/* if you want to see the styles: http://github.com/natalialassance/natalialassance.github.io */'
         },
         files: {
-          'styles/css/main.css': ['/styles/css/*.min.css']
+          'styles/main.min.css': ['/styles/*.css']
         }
       }
     }
