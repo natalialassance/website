@@ -164,12 +164,12 @@ GENERAL
 .container {
     position: relative;
     max-width: 1440px;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 
 .centerTitleWrap {
-    margin: 2em 0;
     -ms-display: flex;
     display: flex;
     -ms-justify-contents: center;
@@ -178,13 +178,11 @@ GENERAL
     align-items: center;
     -ms-flex-flow: column;
     flex-flow: column;
-
-
 }
 
 .title {
 	position: relative;
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: bold;
 	color: #ff6600;
 	display: inline-block;
@@ -209,12 +207,14 @@ GENERAL
 .highlightBox {
 	background-color: #f60;
 	padding: 1em .5em;
+	margin-top: 1rem;
 }
 
 .highlightBox span {
 	font-weight: bold;
 	color: #fff;
-	font-size: 1rem;
+	font-size: 1.4rem;
+	margin-left: 2rem;
 }
 
 /*----------
@@ -294,18 +294,18 @@ p.intro__txt:first-of-type {
     }
 
     .top .title {
-        font-size: 3rem;
+        font-size: 4rem;
         white-space: nowrap;
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     .top .centerTitleWrap {
         left: -10em;
     }
 
     .top .title {
-        font-size: 5rem;
+        font-size: 4.4rem;
 	}
 
 	.natiPhoto {
@@ -315,7 +315,7 @@ p.intro__txt:first-of-type {
 }
 
 /*----------
-WORKS
+WORKS - HOME
 -----------*/
 
 .what {
@@ -486,14 +486,14 @@ FOOTER
 -------*/
 
 .bottom {
-	padding-top: 3em;
+	padding-top: 1.5em;
 	background-color: #eaeaea;
 	overflow: hidden;
 }
 
 .bottom .title {
 	color: #336;
-	font-size: 1.2rem;
+	font-size: 2rem;
 }
 
 .bottom .title::before {
@@ -558,5 +558,161 @@ FOOTER
 	.bottomPic {
 		height: 420px;
 		background-image: url('../images/bottom-1024.png');
+	}
+}
+
+/*-------
+MORE WORKS
+-------*/
+
+.top.works {
+	height: 9.5rem;
+	text-align: center;
+}
+
+
+.top.works .title::before {
+	left: -1em;
+}
+
+
+/*WORKS LIST*/
+
+.portfolio {
+	overflow: hidden;
+}
+
+.portfolio__work .highlightBox{
+	width: 90%;
+	float: right;
+	clear: both;
+	color: #fff;
+	font-weight: bold;
+}
+
+.work__description {
+	display: block;
+	clear: both;
+	padding: 2.5rem 4rem 1rem;
+	color: #666;
+	font-weight: bold;
+	max-width: 600px;
+	margin-left: 1em;
+}
+
+.workStatus {
+	color: #666;
+	font-size: .8rem;
+	margin: .75rem 5rem;
+	max-width: 500px;
+}
+
+.workTitle {
+	color: #336;
+	font-weight: bold;
+	font-size: 1.5rem;
+	display: block;
+}
+
+.workAppDone,
+.work__img_AppDone {
+	width: 100%;
+	height: 430px;
+	margin: 0 auto;
+	display: block;
+	background: url('../images/works/small/app_done.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.workSiteDone,
+.work__img_SiteDone {
+	width: 100%;
+	height: 430px;
+	margin: 0 auto;
+	display: block;
+	background: url('../images/works/small/site_done.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.workSiteEfeito,
+.work__img_SiteEfeito {
+	width: 100%;
+	height: 430px;
+	margin: 3rem auto;
+	display: block;
+	background: url('../images/works/small/site_efeito.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.workSiteCarreiraEAD,
+.work__img_SiteCarreiraEAD {
+	width: 100%;
+	height: 430px;
+	margin: 3rem auto;
+	display: block;
+	background: url('../images/works/small/site_carreiraead.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+@media (min-width: 640px) {
+	.top.works {
+		height: 12rem;
+	}
+	.work__img_AppDone {
+		background-image: url('../images/works/medium/app_done.png');
+	}
+	.work__img_SiteDone {
+		background-image: url('../images/works/medium/site_done.png');
+	}
+	.work__img_SiteEfeito {
+		background-image: url('../images/works/medium/site_efeito.png');
+	}
+	.work__img_SiteCarreiraEAD {
+		background-image: url('../images/works/medium/site_carreiraead.png');
+	}
+}
+
+@media (min-width: 768px) {
+	.top.works {
+		height: 13rem;
+	}
+	.work__img_AppDone {
+		background-image: url('../images/works/large/app_done.png');
+	}
+	.work__img_SiteDone {
+		background-image: url('../images/works/large/site_done.png');
+	}
+	.work__img_SiteEfeito {
+		background-image: url('../images/works/large/site_efeito.png');
+	}
+	.work__img_SiteCarreiraEAD {
+		background-image: url('../images/works/large/site_carreiraead.png');
+	}
+}
+
+@media (min-width: 980px) {
+	.work__img_AppDone {
+		background-image: url('../images/works/large/app_done.png');
+	}
+	.work__img_SiteDone {
+		background-image: url('../images/works/large/site_done.png');
+	}
+	.work__img_SiteEfeito {
+		background-image: url('../images/works/large/site_efeito.png');
+	}
+	.work__img_SiteCarreiraEAD {
+		background-image: url('../images/works/large/site_carreiraead.png');
+	}
+	.portfolio__txt {
+		float: right;
+		width: 55%;
+	}
+	.portfolio__image {
+		float: left;
+		width: 45%;
 	}
 }
