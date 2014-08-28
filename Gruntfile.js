@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    /*
     cmq: {
         options: {
           log: false
@@ -13,6 +14,7 @@ module.exports = function(grunt) {
           }
         }
       },
+      */
 
     svgmin: {
       options: {
@@ -26,22 +28,10 @@ module.exports = function(grunt) {
           cwd: 'images/',
            src: ['**/*.svg'],
            dest: 'images/',
-           ext: '.min.svg'
+           ext: '.svg'
          }]
        }
-     },
-
-
-    cssmin: {
-      add_banner: {
-        options: {
-          banner: '/* if you want to see the styles: http://github.com/natalialassance/natalialassance.github.io */'
-        },
-        files: {
-          'styles/main.min.css': ['/styles/*.css']
-        }
-      }
-    }
+     }
 
   });
 
