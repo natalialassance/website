@@ -411,7 +411,7 @@ WORKS
 	}
 
 	.what__works {
-		width: 350px;
+		height: 350px;
 		margin-left: 5rem;
 		background-image: url('../images/home/works-1440.png');
 	}
