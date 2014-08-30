@@ -9,6 +9,7 @@
 <body>
     <header class="top">
         <div class="container">
+            <div id="menuClose" class="menuClose"></div>
             <nav id="menu" class="menu">
                 <span id="menuCall" class="menuBtn">&equiv;</span>
                 <ul>
@@ -23,7 +24,9 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        Contacts
+                        <a id="contactLink" href="#bottom">
+                            Contacts
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -168,8 +171,8 @@
         </div>
     </section>
 
-    <footer class="bottom">
-    <div class='centerTitleWrap'>
+    <footer id="bottom" class="bottom">
+        <div class='centerTitleWrap'>
             <strong class="title" data-subtitle="Hire me and">
                 Let's make it better.
             </strong>
